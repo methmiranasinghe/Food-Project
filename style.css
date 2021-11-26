@@ -81,7 +81,39 @@ html{
     justify-content: space-between;
     align-items: center;
     box-shadow: 1rem 1rem 1rem #000;
+    position: relative;
+    transform: rotateY(20deg)skewX(-2deg);
 
+}
+.card::before{
+    content: "";
+    height: 100%;
+    width: 1rem;
+    background-color: #242a81;
+    position: absolute;
+    top: 0;
+    left: -1rem;
+    transform: skewY(45deg);
+    transform-origin: right;
+    box-shadow: -0.1rem -0.1rem 0.1rem #000;
+  
+}
+
+.card:hover{
+    transform: rotateY(20deg)skewX(-2deg)translateY(-3rem);
+    box-shadow: 2rem 2rem 2rem #000;
+}
+.card::after{
+    content: "";
+    height: 1rem;
+    width: 100%;
+    background-color: #242a81;
+    position: absolute;
+    top:-1rem;
+    left:0;
+    transform: skewX(45deg);
+    transform-origin: bottom;
+    box-shadow: -0.1rem -0.1rem 0.1rem #000;
 }
 .card-img{
     width: 100%;
@@ -92,7 +124,7 @@ html{
  text-transform: uppercase;
  letter-spacing: 0.5rem;
  margin: 2rem 0;
- text-shadow: 0.12rem0.15rem0.15ren #000;   
+ text-shadow: 0.15rem 0.15rem 0.15rem #000;   
 }
 .card-btn{
  
@@ -106,7 +138,8 @@ html{
   transition: ease-out 0.8s;
   font-size: 2rem;
   outline: none;
-
+  letter-spacing: 0.2rem;
+  padding: 0.5rem 0;
 
 
 }
