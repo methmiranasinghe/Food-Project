@@ -15,6 +15,16 @@ html{
     font-size:62.5%;
 
 }
+.section-heading{
+    font-size: 10rem;
+    font-weight: 900;
+    color: whitesmoke;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 0.5rem;
+    text-shadow:0.5rem 0.5rem 0.5rem#000;
+
+}
 /* End of Common styles */
 
 /* Section1 */
@@ -28,16 +38,7 @@ html{
     justify-content: space-evenly;
 }
 
-.section-heading{
-    font-size: 10rem;
-    font-weight: 900;
-    color: whitesmoke;
-    text-align: center;
-    text-transform: uppercase;
-    letter-spacing: 0.5rem;
-    text-shadow:0.5rem 0.5rem 0.5rem#000;
 
-}
 
 .section-1-icons i{
     font-size: 23rem;
@@ -55,3 +56,82 @@ html{
 
 
 /* End of Section1  */
+
+/* Section2 */
+.section-2{
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(47, 48, 58);
+    display: flex;
+    flex-direction: column;
+    padding: 10rem 0;
+    justify-content: space-between; 
+}
+
+.cards-container{
+    display: flex;
+    justify-content: space-evenly;
+}
+.card{
+    width: 30rem;
+    background-color: rgb(255, 0, 170);
+    padding: 4rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 1rem 1rem 1rem #000;
+
+}
+.card-img{
+    width: 100%;
+}
+.card-name{
+ font-size: 3rem;
+ font-weight: 900;
+ text-transform: uppercase;
+ letter-spacing: 0.5rem;
+ margin: 2rem 0;
+ text-shadow: 0.12rem0.15rem0.15ren #000;   
+}
+.card-btn{
+  /* overflow: hidden;
+  text-decoration: none;
+  padding: 20px 50px;
+  font-size: 1.25rem;
+  position: relative;
+  color: #000;
+  width: 70%;
+  /* background-color: rgb(184, 44, 142); */
+ 
+  /* border-radius: 30px;
+  /* flex-direction: column; 
+  box-shadow: 0 0 0 0 rgba(143,64,248,0.5),0 0 0 0 rgba(39,200,255,0.5);
+  transition: transform 0.3s ease box-shadow 0.3s ease;
+  
+  font-weight: 900; */
+  width: 180px;
+  height: 50px;
+  border: none;
+  color: white;
+  background-color: rgb(195, 0, 255);
+  border-radius: 10px;
+  box-shadow: inset 0 0 0 0 #259ad0;
+  transition: ease-out 0.8s;
+  font-size: 2rem;
+  outline: none;
+
+
+
+}
+.card-btn:hover{
+    cursor: pointer;
+    color: #000;
+    box-shadow: inset 180px 0 0 0 #259ad0;
+    /* background-color: #ff3cac; */
+    background-image: linear-gradient(
+        225deg,#c00ad8 0%,#26caf8 50%,#c625d0 100%);
+} 
+
+
+/* End of Section 2  */
