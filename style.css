@@ -59,6 +59,7 @@ html{
   align-items: center;
   transition: color 0.3s;
   opacity: 0;
+  transition: color 0.3s,opacity 0.2s;
 }
 
 .change .navbar-link{
